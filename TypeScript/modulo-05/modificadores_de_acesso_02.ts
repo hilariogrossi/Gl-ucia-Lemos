@@ -35,4 +35,3 @@ class Pessoa extends Estudante {
 const estudade = new Pessoa (4, 'Patrícia', 'Farmácia');
 
 console.log(estudade.retornaDados()); //urn globalThis(f, seed, [])
-
