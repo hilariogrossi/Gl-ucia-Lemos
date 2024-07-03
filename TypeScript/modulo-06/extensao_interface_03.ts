@@ -31,8 +31,9 @@ interface Funcionario {
 
 }
 
-interface Desenvolvedor extends Omit<Funcionario, 'id'> {
+interface Desenvolvedor extends Omit<Funcionario, 'id' | 'salario'> {
     id: string;
+    salario: string;
     linguagemProgramacao: string;
 
 }
@@ -40,7 +41,7 @@ interface Desenvolvedor extends Omit<Funcionario, 'id'> {
 const desenvolvedor: Desenvolvedor = {
     id: 'js-123',
     nome: 'Hilário Grossi de Oliveira',
-    salario: 10000,
+    salario: 'R$ 10.000,00',
     linguagemProgramacao: 'JavaScript',
 
 }
